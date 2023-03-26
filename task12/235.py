@@ -6,4 +6,8 @@ while '>1' in s or '>2' in s or '>3' in s:
         s = s.replace('>2', '2>', 1)
     if '>3' in s:
         s = s.replace('>3', '1>', 1)
+sm = 0
+for char in s[:-1]:
+    sm = sm + int(char)
+print(sm)
 print(sum(map(int, s[:-1])))
